@@ -1,0 +1,62 @@
+  /*Main image properties*/
+  .image_area img{
+    max-width: 100%;
+    max-height: 100%;
+    display: block; /* remove extra space below image */
+    }
+    body {
+    background-image: url('background.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    }
+
+   /*Topic of the page*/
+  #example2 {
+    font-size: 70px;
+    color: teal;
+    -webkit-text-stroke: 1px white;
+} 
+#rcorners2 {
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 20px; 
+   
+  }
+
+
+#example1 {
+    font-size: 50px;
+    color: teal;
+
+    /* the first value is the width 
+    and the second value is the color */
+    -webkit-text-stroke: 0.2px white; 
+}
+h3 {
+color: white;
+text-shadow: 2px 2px grey;
+}
+
+
+  .myclass {
+    padding: .2rem .6rem .3rem;
+    font-size: 100%;
+    color: white;
+}
+.myclass:hover {
+    font-size: 120%;
+    color: rgb(126, 255, 214);
+   
+}
+
+#testy {
+  border-style: solid;
+  border-color: black;
+  background-image: linear-gradient(teal, grey,black);
+}
+
+.text{
+  color:rgb(62, 60, 60);
+  font-size: xx-large;
+}
