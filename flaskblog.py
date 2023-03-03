@@ -57,6 +57,10 @@ def login():
 # 	# render the sitemap template with the pages list
 # 	return render_template('sitemap.html')
 
+@app.route('/terms')
+def terms():
+    return render_template('terms.html')
+
 
 if __name__ == '__main__':
     app.run(debug=True)
