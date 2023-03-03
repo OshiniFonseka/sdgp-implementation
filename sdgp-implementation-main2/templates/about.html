@@ -115,57 +115,22 @@
       </div>
 	</section>
 	
+
+
+	
 		<section class="www">
+			{% for user in users %}
 			<div class="kk">
-				<p><b>Oshini Fonseka</b></p>
-				<img src="{{url_for('static', filename='imgs/Oshini.jpg')}}"alt = "" width="100" height="90"  style="border-radius: 50%;">
+				<p><b>{{user[0]}}</b></p>
+				<img src="{{user[1]}}"alt = "" width="100" height="90"  style="border-radius: 50%;">
 
-				<p>Informatics Institute of Technology</p>
-				<p>University of Westminster</p>
+				<p>{{user[2]}}</p>
+				<p>{{user[3]}}</p>
 				<!-- <p>Email: <a href="mailto:oshini.20210855@iit.ac.lk" style="color: rgb(6, 172, 255);"><u>oshini.20210855@iit.ac.lk</u></a></p> -->
-				<p>IIT Student No: 20210855</p>
-				<p>Uow No: w1868307</p>
+				<p>IIT Student No: {{user[4]}}</p>
+				<p>Uow No: {{user[5]}}</p>
 			</div>
-			<div class="kk">
-				<p><b>Madusha Hettiarachchi</b></p>
-				<img src="{{url_for('static', filename='imgs/Madusha.jpg')}}"alt = "" width="100" height="90"  style="border-radius: 50%;">
-
-				<p>Informatics Institute of Technology</p>
-				<p>University of Westminster</p>
-				<!-- <p>Email: <a href="mailto:madusha.20210394@iit.ac.lk" style="color: rgb(6, 172, 255);"><u>madusha.20210394@iit.ac.lk</u></a></p> -->
-				<p>IIT Student No: 20210394</p>
-				<p>Uow No: w18671300</p>
-			</div>
-			 <div class="kk">
-				<p><b>Risan Rashid</b></p>
-				<img src="{{url_for('static', filename='imgs/Rashid.jpg')}}"alt = "" width="100" height="90"  style="border-radius: 50%;">
-
-				<p>Informatics Institute of Technology</p>
-				<p>University of Westminster</p>
-				<!-- <p>Email: <a href="mailto:risan.20210402@iit.ac.lk" style="color: rgb(6, 172, 255);"><u>risan.20210402@iit.ac.lk</u></a></p> -->
-				<p>IIT Student No: 20210402</p>
-				<p>Uow No: w1867559</p>
-			</div> 
-			<div class="kk"> 
-				<p><b>Sweda Walpola</b></p>
-				<img src="{{url_for('static', filename='imgs/Sweda.png')}}"alt = "" width="100" height="90"  style="border-radius: 50%;">
-
-				<p>Informatics Institute of Technology</p>
-				<p>University of Westminster</p>
-				<!-- <p>Email: <a href="mailto:sweda.20210366@iit.ac.lk" style="color: rgb(6, 172, 255);"><u>sweda.20210366@iit.ac.lk</u></a></p> -->
-				<p>IIT Student No: 20210402</p>
-				<p>Uow No: w1867559</p>
-			</div>
-			<div class="kk">
-				<p><b>Navindya	Denipitiya</b></p>
-				<img src="{{url_for('static', filename='imgs/Navindya.jpeg')}}"alt = "" width="100" height="90"  style="border-radius: 50%;">
-
-				<p>Informatics Institute of Technology</p>
-				<p>University of Westminster</p>
-				<!-- <p>Email: <a href="mailto:nicolle.20210113@iit.ac.lk" style="color: rgb(6, 172, 255);"><u>nicolle.20210113@iit.ac.lk</u></a></p> -->
-				<p>IIT Student No: 20210113</p>
-				<p>Uow No: w1912800</p>
-			</div>
+			{% endfor %}
 		</section>
 		<br><br>
 
