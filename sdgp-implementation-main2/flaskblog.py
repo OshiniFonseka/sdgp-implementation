@@ -40,7 +40,14 @@ def home():
 
 @app.route("/about")
 def about():
-    return render_template('about.html', title='About')
+    users = []
+    cursor = mysql.connection.cursor()
+    cursor.execute("SELECT * FROM user_about")
+    for row in cursor.fetchall():
+        users.append(row)
+    cursor.close()
+    return render_template('about.html', users = users)
+
 
 
 @app.route("/result")
