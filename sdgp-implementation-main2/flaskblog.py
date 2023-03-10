@@ -131,7 +131,7 @@ def login():
         return render_template("login.html", form=form)
     
     
- @app.route('/terms')
+@app.route('/terms')
 def terms():
     return render_template('terms.html')
 
