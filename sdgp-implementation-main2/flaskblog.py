@@ -129,6 +129,11 @@ def login():
             return "Error user not found"
     else:
         return render_template("login.html", form=form)
+    
+    
+ @app.route('/terms')
+def terms():
+    return render_template('terms.html')
 
 
 @app.route('/logout')
