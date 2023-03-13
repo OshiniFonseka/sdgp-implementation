@@ -1,39 +1,19 @@
 {% extends "layout.html" %}
 {% block content %}
-    <h1>Head Counter</h1>
+    <h1 class="text-center">Head Counter</h1>
 
-    <div class="instruction">
-        <p>Upload your image below and get the count of the crowd.</p>
-    </div>
+        <h5 class="instruction">Upload your image below and get the count of the crowd.</h5><br>
 
-    <div class="container">
-        <div class="upload">
-            <button type="button" class="btn-upload">
-                <i class="fa fa-upload"></i> Upload Image
-                <input type="file">
-            </button>
-        </div>
-    </div> 
+        
 
-    <div class="counter">
-        <button type="count" class="btn" onclick="openPopup()">Count</button>
-        <div class="popup" id="popup">
-            <h2>Your Result</h2>
-            <p>The count of the crowd in your image is:</p>
-            <button type="button" onclick="closePopUp()">OK</button>
-        </div>
-    </div>
-    
-    <script>
-        let popup = document.getElementById("popup");
+        <form class="p-3 text-center" action="/" method="post" enctype="multipart/form-data">
+            <label for="counterfile" class="custom-file-upload">Upload Image</label>
+            <input type="file" name="counterfile" id="counterfile">
+            <span class="file-selected"></span>
+            <input class="btn btn-primary mt-3" type="submit" value="Count">
+        </form>
 
-        function openPopup(){
-            popup.classList.add("open-popup");
-        }
-        function closePopup(){
-            popup.classList.remove("open-popup");
-        }
-
-    </script>
+        <h2 class="instruction">Your Result</h2>
+        <h5 class="instruction">The count of the crowd in your image is:</h5>
 
 {% endblock content %}
