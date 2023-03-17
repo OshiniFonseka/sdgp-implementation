@@ -12,8 +12,9 @@ app.config['SECRET_KEY'] = 'd5f9cd14dac908b79558cb5d'
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = ''
+app.config['MYSQL_DB'] = 'flask_app_db'
 app.config['MYSQL_DB'] = 'crowd'
-app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
+#app.config['MYSQL_CURSORCLASS'] = 'DictCursor'
 mysql = MySQL(app)
 
 posts = [
