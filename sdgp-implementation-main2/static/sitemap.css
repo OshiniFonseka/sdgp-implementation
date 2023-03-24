@@ -83,6 +83,23 @@ ul{
 
 }
 
+.social_links a {
+        display: inline-block;
+        margin-right: 10px;
+        font-size: 24px;
+        color: #999;
+    }
+.social_links a:hover {
+        color: #3b5998; 
+    }
+    
+.social_links a i {
+        transition: color 0.2s ease-in-out;
+    }
+    
+.social_links a:hover i {
+        color: #3b5998;
+
 @media(max-width: 767px){
     .footer-col{
         width: 50%;
