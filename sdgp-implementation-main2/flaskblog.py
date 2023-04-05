@@ -136,6 +136,9 @@ def login():
 def terms():
     return render_template('terms.html')
 
+@app.route('/more')
+def more():
+    return render_template('more.html')
 
 @app.route('/logout')
 def logout():
